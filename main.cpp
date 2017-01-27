@@ -4,13 +4,15 @@
 #include "tags.hpp"
 
 int main() {
-	p P {
-			p{"Je suis beau"},
-	      p{"Et je fais de l'HTML"},
-	      img{"www.google.com"}
-	};
-
-	std::cout << P;
+	std::cout <<
+p{
+	p{"Je suis beau"},
+	p{"Et je fais de l'HTML"},
+	p{
+		p{"Test 1"}
+	},
+	img{"www.idk.com"}
+};
 
 	return 0;
 }
