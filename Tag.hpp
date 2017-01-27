@@ -17,13 +17,13 @@ public:
 	std::string text;
 	std::vector<Tag> children;
 
-	unsigned long indentSize;
+	static unsigned long indentSize;
+	static unsigned long currentIndentation;
 
-public:
-	Tag(const std::string &name, const std::string &text);
+protected:
+	Tag(const std::string &name, const std::string &text = "");
 	Tag(const std::string &name, const std::vector<Tag> &children);
 
-public:
 	friend std::ostream &operator<<(std::ostream &os, const Tag &tag);
 };
 

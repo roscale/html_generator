@@ -1,15 +1,16 @@
 #include <iostream>
 #include <fstream>
 #include "Tag.hpp"
+#include "tags.hpp"
 
 int main() {
+	p P {
+			p{"Je suis beau"},
+	      p{"Et je fais de l'HTML"},
+	      img{"www.google.com"}
+	};
 
-	Tag p2("p", "222");
-	std::vector<Tag> e {p2};
-	Tag p("p", e);
-
-	std::ofstream f("out.txt");
-	f << p;
+	std::cout << P;
 
 	return 0;
 }
