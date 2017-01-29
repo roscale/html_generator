@@ -10,8 +10,7 @@
 #include <vector>
 #include <ostream>
 
-class Tag {
-public:
+struct Tag {
 	std::string name;
 	std::vector<std::pair<std::string, std::string>> attributes;
 	std::string text;

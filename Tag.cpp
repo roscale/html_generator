@@ -5,7 +5,7 @@
 #include "Tag.hpp"
 #include "utility.hpp"
 
-unsigned long Tag::indentSize = 2;
+unsigned long Tag::indentSize = 3;
 unsigned long Tag::currentIndentation = 0;
 
 Tag::Tag(const std::string &name, const std::string &text) : name(name), text(text) {}
